@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Form example</title>
+</head>
+<body>
+  <h1>Example of a form</h1>
+  <a 
+    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+    target="_blank">
+    Input type referanser
+  </a>
+  <form action="result.html" method="GET">
+    <fieldset>
+      <legend>Contact details</legend>
+      <label for="name">Fullname</label>
+      <input 
+        type="text" 
+        name="name" 
+        id="name" 
+        placeholder="Skriv navnet ditt her"
+        minlength="3" 
+        maxlength="40"
+        autocomplete="off"
+        required />
+
+      <label for="email">Email</label>
+      <input 
+        type="email"
+        name="email"
+        id="email" />
+
+      <label for="age">Age</label>
+      <input 
+        type="range" 
+        id="age" 
+        name="age"
+        min="1" 
+        max="80"
+        step="2"
+        list="nunbers" />
+
+      <label for="profile">Profile image</label>
+      <input
+        type="file"
+        name="profile"
+        id="profile" />
+
+      <input type="submit" value="send" />
+    </fieldset>
+  </form>
+</body>
+</html>
