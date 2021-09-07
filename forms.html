@@ -10,6 +10,7 @@
 </head>
 <body>
   <h1>Example of a form</h1>
+  <p>Påkrevd felt blir fulgt av <abbr title="required">*</abbr>.</p>
   <a 
     href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
     target="_blank">
@@ -29,7 +30,7 @@
         autocomplete="off"
         required />
 
-      <label for="email">Email</label>
+      <label for="email">Email <abbr title="required" aria-label="required">*</abbr></label>
       <input 
         type="email"
         name="email"
@@ -44,6 +45,12 @@
         max="80"
         step="2"
         list="nunbers" />
+      
+      <label for="hobby">Hobby</label>
+      <select name="hobby" id="hobby">
+        <option value="kino">kino</option>
+        <option value="fotball">Fotbål</option>
+      </select>
 
       <label for="profile">Profile image</label>
       <input
